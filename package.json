@@ -1,0 +1,30 @@
+{
+  "name": "@celi4/cta-button",
+  "files": [
+    "dist"
+  ],
+  "version": "1.0.0",
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "build:types": "tsc -m amd -t es2019 -d --isolatedModules false  --moduleResolution node --esModuleInterop --outDir dist --emitDeclarationOnly --experimentalDecorators src/index.ts",
+    "build": "vite build & npm run build:types"
+  },
+  "dependencies": {
+    "lit": "^2.2.5"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.7",
+    "@vitest/ui": "latest",
+    "jsdom": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "browser": "dist/index.iife.js",
+  "types": "types/index.d.ts",
+  "type": "module"
+}

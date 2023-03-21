@@ -1,0 +1,7 @@
+node_modules/
+src/
+*.log
+*.ts
+*.config.js
+test/
+vitest.config.js
